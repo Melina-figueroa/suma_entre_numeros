@@ -1,7 +1,7 @@
 function calcularPotencia(base: number, exponente: number): number {
-  let resultado2: number = 0;
+  let resultado2: number = 1;
   for (let indice: number = 1; indice <= exponente; indice++) {
-    resultado2 = base * exponente;
+    resultado2 = base * resultado2;
   }
   return resultado2;
 }

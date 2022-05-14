@@ -1,5 +1,5 @@
-function calcularAreaTriangulo(Base: number, Altura: number): number {
-  let Area = (Base * Altura) / 2;
+function calcularAreaTriangulo(base: number, altura: number): number {
+  let Area = (base * altura) / 2;
   return Area;
 }
 let base: number = 1;
