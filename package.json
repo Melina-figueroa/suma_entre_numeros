@@ -1,7 +1,7 @@
 {
-  "name": "clases-de-los-viernes",
+  "name": "clase-de-los-viernes",
   "version": "1.0.0",
-  "description": "ejercicios de los viernes",
+  "description": "",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
