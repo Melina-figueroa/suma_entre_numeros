@@ -1,3 +1,5 @@
+let v1: number[] = new Array(6);
+let v2: number[] = new Array(6);
 function ingresar_numeros() {
   for (let indice: number = 0; indice < 6; indice++) {
     v1[indice] = Number(prompt("Ingrese numero1: "));
@@ -13,9 +15,9 @@ function sumar() {
     console.log(suma[indice]);
   }
 }
-let v1: number[] = new Array(6);
-let v2: number[] = new Array(6);
 //let suma: number[] = new Array(6);
 
 ingresar_numeros();
 sumar();
+//console.log('El numero de la posición [indice]')
+//console.log(`El número en la posición  [indice] es:  (suma[indice]);
