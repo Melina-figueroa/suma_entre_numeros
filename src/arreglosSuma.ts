@@ -1,14 +1,21 @@
-function sumar(): number {
-  let suma: number = 0;
-  for (let indice: number = 0; indice <= arreglo_long; indice++) {
-    suma = numero1[indice] + numero2[indice];
+function ingresar_numeros() {
+  for (let indice: number = 0; indice < 6; indice++) {
+    v1[indice] = Number(prompt("Ingrese numero1: "));
   }
-  return suma;
+  for (let indice: number = 0; indice < 6; indice++) {
+    v2[indice] = Number(prompt("Ingrese numero 2: "));
+  }
 }
-let arreglo_long: number[] = new Array(6);
-let numero1: number[] = new Array(valor1);
-let numero2: number[] = new Array(valor2);
+function sumar() {
+  let suma: number[] = new Array(6);
+  for (let indice: number = 0; indice < 6; indice++) {
+    suma[indice] = v1[indice] + v2[indice];
+    console.log(suma[indice]);
+  }
+}
+let v1: number[] = new Array(6);
+let v2: number[] = new Array(6);
+//let suma: number[] = new Array(6);
 
-for (let indice: number = 0; indice <= arreglo_long; indice++) {
-  numero1[indice] = Number(prompt("Ingrese numero1: "));
-}
+ingresar_numeros();
+sumar();
