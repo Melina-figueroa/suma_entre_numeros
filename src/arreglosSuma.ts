@@ -1,6 +1,6 @@
 let v1: number[] = new Array(6);
 let v2: number[] = new Array(6);
-function ingresar_numeros() {
+function ingresar_numeros(): void {
   for (let indice: number = 0; indice < 6; indice++) {
     v1[indice] = Number(prompt("Ingrese numero1: "));
   }
@@ -8,7 +8,7 @@ function ingresar_numeros() {
     v2[indice] = Number(prompt("Ingrese numero 2: "));
   }
 }
-function sumar() {
+function sumar(): void {
   let suma: number[] = new Array(6);
   for (let indice: number = 0; indice < 6; indice++) {
     suma[indice] = v1[indice] + v2[indice];
