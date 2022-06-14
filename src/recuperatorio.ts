@@ -71,6 +71,12 @@ function obtenerPremio(compra: number): void {
   }
 }
 
+/*function imprimir(dato:string, arrPrint:number): void{
+  for(let i: number = 0; i < arrPrint.length;i++){
+console.log("dato" +dato)
+    }
+}*/
+
 let cantidadProductos: number = Number(
   prompt("Cantidad de productos a comprar ")
 );
@@ -78,18 +84,23 @@ let vListaProductos: string[] = new Array(cantidadProductos); //arreglo de long
 let vPrecio: number[] = new Array(cantidadProductos); // valor unitario de cada producto
 let vCantProd: number[] = new Array(cantidadProductos); //cantidad de producto a llevar
 let precioTotal: number = 0;
+
+console.log("El detalle de su compra es");
 cargarDatos(vListaProductos);
+console.log("Productos en el carrito" + vListaProductos);
 cargarPrecio(vPrecio);
+console.log("Precio por unidad" + vPrecio);
 cargarCantidad(vCantProd);
+console.log("Cantidad " + vCantProd);
 precioTotal = obtenerPrecioTotal(vCantProd, vPrecio);
-console.log(
-  "El detalle de su compra es: " +
-    vListaProductos +
+console.log("El total de su compra es" + precioTotal);
+console.log(obtenerPremio(precioTotal));
+/*console.log(
+  "El detalle de su compra es: "  +vListaProductos+
     " cantidad " +
     vCantProd +
     " precio por unidad " +
     vPrecio +
     " Total de compra ",
   +precioTotal
-);
-obtenerPremio(precioTotal);
+);*/
