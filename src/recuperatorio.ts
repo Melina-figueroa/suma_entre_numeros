@@ -19,12 +19,11 @@ Dependiendo del monto comprado, el cliente participa de un sorteo:
 moto 0k
 • si compra mas de 3000 participa por un 0km
 */
-function cargarDatos(arrayProductos: string[]): string {
+function cargarDatos(arrayProductos: string[]): void {
   for (let i: number = 0; i < arrayProductos.length; i++) {
     let productos: string = prompt("Ingrese productos en el carrito ");
     arrayProductos[i] = productos;
   }
-  return arrayProductos[i];
 }
 function cargarPrecio(arrayPrecioProducto: number[]): void {
   for (let i: number = 0; i < arrayPrecioProducto.length; i++) {
