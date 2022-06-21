@@ -60,13 +60,13 @@ function obtenerPrecioTotal(
 }
 
 function obtenerPremio(compra: number): void {
-  if (compra < 1000) {
+  if (compra <= 1000) {
     console.log("Seguí Participando ");
-  } else if (compra > 1000 && compra < 2000) {
+  } else if (compra >= 1000 && compra <= 2000) {
     console.log("Participa por un TV LED ");
-  } else if (compra > 2000 && compra < 3000) {
+  } else if (compra >= 2000 && compra <= 3000) {
     console.log("Participa por una moto 0km  ");
-  } else if (compra > 3000) {
+  } else if (compra >= 3000) {
     console.log("Participa por un vehículo 0km ");
   }
 }
@@ -87,20 +87,11 @@ let precioTotal: number = 0;
 
 console.log("El detalle de su compra es");
 cargarDatos(vListaProductos);
-console.log("Productos en el carrito" + vListaProductos);
+console.log("Productos en el carrito " + vListaProductos);
 cargarPrecio(vPrecio);
-console.log("Precio por unidad" + vPrecio);
+console.log("Precio por unidad " + vPrecio);
 cargarCantidad(vCantProd);
 console.log("Cantidad " + vCantProd);
 precioTotal = obtenerPrecioTotal(vCantProd, vPrecio);
-console.log("El total de su compra es" + precioTotal);
+console.log("El total de su compra es " + precioTotal);
 console.log(obtenerPremio(precioTotal));
-/*console.log(
-  "El detalle de su compra es: "  +vListaProductos+
-    " cantidad " +
-    vCantProd +
-    " precio por unidad " +
-    vPrecio +
-    " Total de compra ",
-  +precioTotal
-);*/
